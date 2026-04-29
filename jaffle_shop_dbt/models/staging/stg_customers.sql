@@ -1,7 +1,7 @@
 {{ config(materialized='view') }}
 
 WITH source AS (
-    SELECT * FROM {{ source('jaffle_shop', 'raw_customers') }}
+    SELECT * FROM {{ source('jaffle_shop', 'customers') }}
 )
 
 SELECT
